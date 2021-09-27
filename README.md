@@ -1,7 +1,7 @@
 ﻿
 # Structure-from-Sherds 
  <p align="center">
- <img src="https://github.com/SeongJong-Yoo/Pottery-SfSV2/blob/veri/etc/Pot%20reconstruction.gif">
+ <img src="https://github.com/SeongJong-Yoo/structure-from-sherds/blob/main/etc/Pot%20reconstruction.gif">
  </p>
  
  This repository contains code for restoring pottery of unordered and mixed fragments. The code is provided without any warranty. If using this code, please cite our work as shown below. 
