@@ -1,0 +1,23 @@
+{
+  "paths": [
+    {
+      "_path": "Library/bin/flang.dll",
+      "path_type": "hardlink",
+      "sha256": "9aef04fa95927b433281b29ae3a59c3ef3b9b8725b599c2be9415b437a21ac5c",
+      "size_in_bytes": 1691648
+    },
+    {
+      "_path": "Library/bin/flangrti.dll",
+      "path_type": "hardlink",
+      "sha256": "7be79060537fdc4dbe30b1f0b0c6c2d80d5dbb888f3018707ba94119e8c8f64e",
+      "size_in_bytes": 50688
+    },
+    {
+      "_path": "Library/bin/ompstub.dll",
+      "path_type": "hardlink",
+      "sha256": "a45f6d5e773b0227400f17864b436dcf0e2e6bc757e3a25e37714a43ade4db57",
+      "size_in_bytes": 13824
+    }
+  ],
+  "paths_version": 1
+}

@@ -1,0 +1,16 @@
+{
+  "arch": "x86_64", 
+  "build": "vc14_20180208", 
+  "build_number": 20180208, 
+  "depends": [
+    "openmp ==5.0.0", 
+    "vc 14"
+  ], 
+  "features": "vc14", 
+  "license": "Apache 2.0", 
+  "name": "libflang", 
+  "platform": "win", 
+  "subdir": "win-64", 
+  "track_features": "flang", 
+  "version": "5.0.0"
+}
