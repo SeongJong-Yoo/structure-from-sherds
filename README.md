@@ -9,6 +9,7 @@
 	@inproceedings{structure-from-sherds,
 	author = {Hong*, Je Hyeong and Yoo*, Seong Jong and Arshad, Muhammad Zeeshan and Kim, Young Min and Kim, Jinwook},
 	booktitle = {2021 IEEE/CVF International Conference on Computer Vision (ICCV)},
+	title = {Structure-from-Sherds: Incremental {3D} Reassembly of Axially Symmetric Pots from Unordered and Mixed Fragment Collections}, 
 	year = {2021},
 	}
 
