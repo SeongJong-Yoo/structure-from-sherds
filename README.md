@@ -91,4 +91,4 @@ First 'txt' file includes overall history of reconstructed sherd's order. Second
 
 
 ## Bug Report
-Please raise an issue on Github for issues related to this code. If you have any questions related about the code feel free to send an email to here (yoosj@kist.re.kr). 
+Please raise an issue on Github for issues related to this code. If you have any questions related about the code feel free to send an email to here (yoosj@umd.edu). 
