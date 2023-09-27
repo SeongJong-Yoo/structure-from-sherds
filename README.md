@@ -1,4 +1,4 @@
-﻿
+
 # Structure-from-Sherds 
  <p align="center">
  <img src="https://github.com/SeongJong-Yoo/structure-from-sherds/blob/main/etc/Pot%20reconstruction.gif">
@@ -19,12 +19,13 @@
 1. Install requirements using [VCPKG](https://vcpkg.io/en/).
     * Classic mode
     ```
-    >> vcpkg install ceres[*]
-    >> vcpkg install pcl[*] 
-    or 
-    >> vcpkg install pcl[tools]
-    >> vcpkg install pcl[vtk] --recurse
-    >> vcpkg install pcl[visualization] --recurse
+    vcpkg install ceres[*]
+    vcpkg install pcl[*] 
+    ```
+    ``` 
+    vcpkg install pcl[tools]
+    vcpkg install pcl[vtk] --recurse
+    vcpkg install pcl[visualization] --recurse
     ```
 	* Manifest mode
         - Create 'vcpkg.json'
