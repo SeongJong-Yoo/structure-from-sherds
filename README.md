@@ -22,6 +22,7 @@
     vcpkg install ceres[*]
     vcpkg install pcl[*] 
     ```
+    or
     ``` 
     vcpkg install pcl[tools]
     vcpkg install pcl[vtk] --recurse
