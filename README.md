@@ -16,19 +16,31 @@
 	}
 
 ## How to run
-1. Install requirements followed below.
-	* Ceres Solver - v. 1.14.0 
-		* CXX11
-		* GFLAGS
-		* LAPACK
-		* OPENMP
-		* SUITESPARSE
-		* CUSTOM_BLAS
-		* SCHUR_SPECIALIZATIONS
-	* Point Cloud Library - v. 1.9.1
-2. Download pottery data : https://drive.google.com/drive/folders/1Jsut8oUukALiIG6QZCwuMde0GujgPDaY?usp=sharing
-3.  Build with CMAKE file.
-4. Enable *OpenMP support* to accelerate reconstruction.
+1. Install requirements using [VCPKG](https://vcpkg.io/en/).
+    * Classic mode
+    ```
+    >> vcpkg install ceres[*]
+    >> vcpkg install pcl[*] 
+    or 
+    >> vcpkg install pcl[tools]
+    >> vcpkg install pcl[vtk] --recurse
+    >> vcpkg install pcl[visualization] --recurse
+    ```
+	* Manifest mode
+        - Create 'vcpkg.json'
+        ```
+        {
+            "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg-tool/main/docs/vcpkg.schema.json",
+            "name": "base-agnostic",
+            "version": "0.1.0",
+            "dependencies": [
+                {"name": "ceres", "features":["cxsparse", "eigensparse", "lapack", "suitesparse", "tools"]},
+                {"name": "pcl", "features": ["visualization", "vtk", "tools"]}
+            ]
+        }
+        ```
+2. Build with CMAKE file.
+3. Download pottery data : https://drive.google.com/drive/folders/1Jsut8oUukALiIG6QZCwuMde0GujgPDaY?usp=sharing
 5. Choose one of the experiments commented out at *data_path.h*. 
 6. Run main.cpp file.
 
