@@ -1,39 +1,38 @@
-cmake_minimum_required(VERSION 2.6 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.11)
 project(SfS-1.1)
 
 # Ceres
-find_package(Ceres ${SYSTEM_PACKAGE_REQUIRED})
-if(CERES_FOUND)
-	include_directories(${CERES_INCLUDE_DIRS})
-	link_directories(${CERES_LIBRARY_DIRS})
-	add_definitions(${CERES_DEFINITIONS})
+find_package(Ceres CONFIG REQUIRED)
+
+# PCL  
+find_package(PCL CONFIG REQUIRED)  
+find_package(PCL CONFIG REQUIRED COMPONENTS common io)  
+
+#OpenMP
+find_package(OpenMP)
+
+set(CMAKE_CXX_STANDARD 17)
+
+file(GLOB PROJ_SRC "*.cpp", "*.h", "class/*.cpp", "class/*.h")
+add_executable(Hierarchy-Clear ${PROJ_SRC})
+
+if (MSVC)
+  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /bigobj")
+  add_definitions(-D _CRT_SECURE_NO_WARNINGS)
 endif()
 
-# PCL
-find_package(PCL 1.9.1 REQUIRED)  
-find_package(PCL 1.9.1 REQUIRED COMPONENTS common io)
-include_directories(${PCL_INCLUDE_DIRS})
-link_directories(${PCL_LIBRARY_DIRS})
-add_definitions(${PCL_DEFINITIONS})
-
-add_executable(SfS-1.1 main.cpp
-class/data_path.h
-class/axis_estimation.cpp 
-class/axis_estimation.h
-class/data_structure.cpp 
-class/data_structure.h
-class/feature_matching.cpp 
-class/feature_matching.h
-class/filter.cpp 
-class/filter.h
-class/KDTree.cpp 
-class/KDTree.h
-class/ranking_system.cpp 
-class/ranking_system.h
-class/reconstruction.cpp 
-class/reconstruction.h
-class/visualize.cpp 
-class/visualize.h
+if(OpenMP_CXX_FOUND)
+    target_link_libraries(Hierarchy-Clear 
+        PUBLIC 
+            OpenMP::OpenMP_CXX
+    )
+endif()
+target_link_libraries(SfS-1.1
+    PRIVATE
+        Ceres::ceres
+        ${PCL_LIBRARIES}
 )
-target_link_libraries(SfS-1.1 ${PCL_LIBRARIES})
-target_link_libraries(SfS-1.1 ceres)
+target_include_directories(SfS-1.1
+    PUBLIC
+        ${CMAKE_SOURCE_DIR}/class
+)
