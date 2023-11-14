@@ -42,7 +42,7 @@
         }
         ```
 2. Build with CMAKE file.
-3. Download pottery data : https://drive.google.com/drive/folders/1Jsut8oUukALiIG6QZCwuMde0GujgPDaY?usp=sharing
+3. Download pottery data : https://drive.google.com/file/d/1YdiX-UziBmVHnYzXhreXsq6xlvn4UEpZ/view?usp=sharing
 5. Choose one of the experiments commented out at *data_path.h*. 
 6. Run main.cpp file.
 
