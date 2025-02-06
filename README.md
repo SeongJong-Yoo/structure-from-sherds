@@ -15,6 +15,9 @@
     	pages     = {5443-5451}
 	}
 
+## News
+[2025/02/06] Extended version of structure-from-sherds is released! Check it [here](https://sj-yoo.info/sfs/) 
+
 ## How to run
 1. Install requirements using [VCPKG](https://vcpkg.io/en/).
     * Classic mode
