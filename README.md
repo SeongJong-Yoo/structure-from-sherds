@@ -9,10 +9,16 @@
 	@inproceedings{Hong_2021_ICCV,
     	author    = {Hong, Je Hyeong and Yoo, Seong Jong and Zeeshan, Muhammad Arshad and Kim, Young Min and Kim, Jinwook},
     	title     = {Structure-From-Sherds: Incremental 3D Reassembly of Axially Symmetric Pots From Unordered and Mixed Fragment Collections},
-    	booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+    	journal   = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
     	month     = {October},
     	year      = {2021},
     	pages     = {5443-5451}
+	}
+	@inproceedings{YooandLiu2024SfS,
+    	author    = {Yoo, Seong Jong and Liu, Sisung and Arshad, Muhammad Zeeshan and Kim, Jinhyeok and Kim, Young Min and Aloimonos, Yiannis and Fermüller, Cornelia and Joo, Kyungdon and Kim, Jinwook and Hong, Je Hyeong},
+    	title     = {Structure-From-Sherds++: Robust Incremental 3D Reassembly of Axially Symmetric Pots from Unordered and Mixed Fragment Collections},
+     	journal	  = {arXiv},
+    	year      = {2025},
 	}
 
 ## News
