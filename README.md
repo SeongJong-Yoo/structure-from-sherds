@@ -14,6 +14,7 @@
     	year      = {2021},
     	pages     = {5443-5451}
 	}
+ 
 	@inproceedings{YooandLiu2024SfS,
     	author    = {Yoo, Seong Jong and Liu, Sisung and Arshad, Muhammad Zeeshan and Kim, Jinhyeok and Kim, Young Min and Aloimonos, Yiannis and Fermüller, Cornelia and Joo, Kyungdon and Kim, Jinwook and Hong, Je Hyeong},
     	title     = {Structure-From-Sherds++: Robust Incremental 3D Reassembly of Axially Symmetric Pots from Unordered and Mixed Fragment Collections},
