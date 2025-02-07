@@ -6,7 +6,7 @@
  
  This repository contains code for restoring pottery of unordered and mixed fragments. The code is provided without any warranty. If using this code, please cite our work as shown below. 
 
-	@inproceedings{Hong_2021_ICCV,
+	@inproceedings{HongandYoo_2021_ICCV,
     	author    = {Hong, Je Hyeong and Yoo, Seong Jong and Zeeshan, Muhammad Arshad and Kim, Young Min and Kim, Jinwook},
     	title     = {Structure-From-Sherds: Incremental 3D Reassembly of Axially Symmetric Pots From Unordered and Mixed Fragment Collections},
     	journal   = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
@@ -17,7 +17,7 @@
 
 Extended paper. 
 
-	@inproceedings{YooandLiu2024SfS,
+	@inproceedings{YooandLiu_2025_SfS,
     	author    = {Yoo, Seong Jong and Liu, Sisung and Arshad, Muhammad Zeeshan and Kim, Jinhyeok and Kim, Young Min and Aloimonos, Yiannis and Fermüller, Cornelia and Joo, Kyungdon and Kim, Jinwook and Hong, Je Hyeong},
     	title     = {Structure-From-Sherds++: Robust Incremental 3D Reassembly of Axially Symmetric Pots from Unordered and Mixed Fragment Collections},
      	journal	  = {arXiv},
